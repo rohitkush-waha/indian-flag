@@ -1,0 +1,98 @@
+body {
+    background-color: #000000;
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+h1 {
+    text-transform: uppercase;
+}
+
+.saffron-text {
+    color: #F4C430;
+
+}
+
+.white-text {
+    color: #ffffff;
+}
+
+.green-text {
+    color: #008000;
+}
+
+.saffron {
+    background: #F4C430;
+}
+
+.white {
+    background: #ffffff;
+}
+
+.green {
+    background: #008000;
+}
+
+.block {
+    height: 100px;
+    width: 500px;
+}
+
+.ashoka-chakra {
+    width: 100px;
+    height: 100px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.rotate {
+    width: 100px;
+    animation: rotation 8s infinite linear;
+}
+
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(359deg);
+    }
+}
+
+.title {
+    text-align: center;
+    margin-top: 5%;
+}
+
+.animate-charcter {
+    text-transform: uppercase;
+    background-image: linear-gradient(-225deg,
+            #F4C430 0%,
+            #ffffff 29%,
+            #008000 67%,
+            #F4C430 100%);
+    background-size: auto auto;
+    background-clip: border-box;
+    background-size: 200% auto;
+    color: #fff;
+    background-clip: text;
+    text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 5s linear infinite;
+    display: inline-block;
+    font-size: 70px;
+}
+
+@keyframes textclip {
+    to {
+        background-position: 200% center;
+    }
+}
